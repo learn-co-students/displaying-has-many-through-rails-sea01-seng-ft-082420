@@ -162,7 +162,7 @@ Because we've set up a join model, the interface will look almost identical. We 
 
 <h2><%= @user.username %> </h2> has commented on the following posts:
 
-<% @user.posts.each do |post| %>
+<% @user.posts.each do |post| %
   <%= link_to post.title, post_path(post) %>
 <% end %>
 ```
